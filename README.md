@@ -32,7 +32,7 @@ Upload a dataset → preprocess → split → train → visualize → get result
         - Proper categorical encoding
         - Consistent label transformation
         - Session-based model persistence
-        - Automatic saving as final_model.pkl
+        - Automatic saving as ```final_model.pkl```
           
 - **Results & Visualization**
     - Confusion matrix heatmap
