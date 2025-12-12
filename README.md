@@ -121,13 +121,51 @@ Then open: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ## 🧪 How To Use
 
-### 1. Upload dataset
-### 2. Choose preprocessing options
-### 3. Split dataset
-### 4. Pick a model
-### 5. Train model
-### 6. View results:
+- Upload dataset
+- Choose preprocessing options
+- Split dataset
+- Pick a model
+- View results:
     - Confusion matrix
     - Curves
     - Accuracy / errors
     - Classification report
+
+---
+
+## 📜 Requirements File
+
+Make sure to include this:
+
+```nginx
+Django
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+joblib
+openpyxl
+```
+
+---
+
+## ⭐ Future Enhancements
+
+- Add Random Forest & SVM
+- Auto EDA (plots, correlations)
+- Downloadable PDF report
+- Pipeline export (YAML / JSON)
+- Multi-model comparison dashboard
+
+--- 
+
+## 🙌 Author
+
+Built with ❤️ by [Kai](https://github.com/kaix-404)
+
+---
+
+## 🛡️ License
+
+MIT License — feel free to use and modify.
