@@ -47,3 +47,33 @@ Upload a dataset → preprocess → split → train → visualize → get result
     - Animated starry sky background
     - Gradient buttons with glow effects
     - Smooth navigation with HTMX
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer            | Technology                             |
+|------------------|----------------------------------------|
+| Frontend         | HTMX, Tailwind CSS                     |
+| Backend          | Django 5, Python 3                     |
+| ML Engine        | scikit-learn, NumPy, Pandas            |
+| Visualization    | Matplotlib, Seaborn                    |
+
+---
+
+## 📂 Project Structure
+
+```csharp
+ml_pipeline_builder/
+│── builder/               # App
+│── templates/
+│   ├── base.html
+│   ├── preprocess.html
+│   ├── results.html
+│   └── partials/
+│── static/                # Tailwind + animations
+│── final_model.pkl        # Saved model
+│── manage.py
+│── .gitignore
+│── requirements.txt
+```
