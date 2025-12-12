@@ -1,0 +1,12 @@
+{% if error %}
+<div class="text-red-600 font-semibold">{{ error }}</div>
+{% else %}
+<div class="p-4 border border-white/10 rounded-lg p-4 bg-white/5 backdrop-blur-sm shadow-inner">
+    <p><strong>File:</strong> {{ filename }}</p>
+
+    <p class="mt-2">Rows: {{ rows }}</p>
+    <p class="mb-2">Columns: {{ cols }}</p>
+
+    <p><strong>Columns:</strong> {{ columns }}</p>
+</div>
+{% endif %}

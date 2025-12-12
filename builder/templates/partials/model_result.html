@@ -1,0 +1,19 @@
+<div class="p-4 border border-white/10 rounded-lg p-4 bg-white/5 backdrop-blur-sm shadow-inner">
+    <strong>Training Completed</strong>
+
+    <p class="mt-2">Model: {{ model_type }}</p>
+
+    {% if model_type == 'linear' %}
+
+        <p>Mean Squared Error (MSE): {{ mse|floatformat:3 }}</p>
+        <p>Mean Absolute Error (MAE): {{ mae|floatformat:3 }}</p>
+        <p>R² Score: {{ r2|floatformat:3 }}</p>
+
+    {% else %}
+
+        <p>Accuracy: {{ accuracy|floatformat:2 }}</p>
+        <p>Classification Report:</p>
+        <pre>{{ report }}</pre>
+
+    {% endif %}
+</div>
