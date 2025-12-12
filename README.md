@@ -65,15 +65,69 @@ Upload a dataset → preprocess → split → train → visualize → get result
 
 ```csharp
 ml_pipeline_builder/
-│── builder/               # App
-│── templates/
-│   ├── base.html
-│   ├── preprocess.html
-│   ├── results.html
-│   └── partials/
-│── static/                # Tailwind + animations
-│── final_model.pkl        # Saved model
-│── manage.py
+│── .venv/                      # Virtual environment (ignored)
+│── builder/                    # Main Django app
+│   ├── migrations/
+│   ├── templates/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+│── ml_pipeline_builder/        # Django project folder
+│── db.sqlite3                  # Local database
+│── final_model.pkl             # Saved ML model
+│── manage.py                   # Django runner
 │── .gitignore
 │── requirements.txt
 ```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kaix-404/ml_pipeline_builder.git
+cd ml_pipeline_builder
+```
+
+### 2. Create Virtual Environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run The Server
+
+```bash
+python manage.py runserver
+```
+
+Then open: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+---
+
+## 🧪 How To Use
+
+### 1. Upload dataset
+### 2. Choose preprocessing options
+### 3. Split dataset
+### 4. Pick a model
+### 5. Train model
+### 6. View results:
+    - Confusion matrix
+    - Curves
+    - Accuracy / errors
+    - Classification report
