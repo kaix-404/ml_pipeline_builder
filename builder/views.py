@@ -29,8 +29,7 @@ def upload_page(request):
         try:
             if uploaded_file.name.endswith(".csv"):
                 encodings = ["utf-8", "latin-1", "iso-8859-1", "cp1252"]
-                raw = uploaded_file.read()
-                df = None
+                df = pd.read_csv(uploaded_file, encoding='latin-1')
                 for enc in encodings:
                     try:
                         text = raw.decode(enc, errors="ignore")
